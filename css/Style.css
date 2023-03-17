@@ -1,0 +1,244 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --Maleficio: #33FFFF;
+    --dark-blue: #3333FF;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+    --slg: 20px;
+
+}
+body{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgb(146, 160, 160);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-bottom: 3px solid var(--black);
+    background-color: var(--white);
+}
+.menu{
+    display: none;
+}
+.logo{
+    width: 45px;
+    height: 45px;
+    margin-top: 7px;
+    border-radius: 50%;
+    border: 1px solid var(--black)
+}
+.navbar-left ul, .navbar-right ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 0px;
+}
+.navbar-left{
+    display: flex;
+    margin-left: 0px;
+}
+.navbar-left ul{
+    margin-left: 12px;
+}
+.navbar-right ul a{
+    padding-right: 15px;
+}
+.navbar-left ul li a, .navbar-right ul li a{
+    text-decoration: none;
+    color: rgb(146, 160, 160);
+    border: 1px solid var(--white);
+    padding: 8px;
+    border-radius: 8px;
+    font-size: var(--lg);
+    margin-left: 40px;
+}
+.navbar-left ul li:nth-child(1) a{
+    color:var(--black);
+    border: 1px solid var(--black);
+}
+.navbar-left ul li a:hover, .navbar-right ul li a:hover{
+    text-decoration: none;
+    color: var(--black);
+    border: 1px solid var(--black);
+    font-size: var(--lg);
+}
+
+.navbar-email{
+    color: var(--very-light-pink);
+    font-size: var(--sm);
+    margin-right: 12px;
+}
+
+.logo_gh{
+    display: flex;
+    width: 40px;
+    height: 40px;
+}
+.bienvenida_pag{
+    background-color: rgb(146, 160, 160);
+}
+.Saludo{
+    display:block;
+    font-family:'Courier New', Courier, monospace;
+    white-space: nowrap;
+    border-right: 0px solid;
+    width: 70ch;
+    margin-left: 350px;
+    animation: typing 2s steps(68), blink 0s infinite step-end alternate;
+    overflow: hidden; 
+}
+
+.avatar_img{
+    display: block;
+    text-align: center;
+   }
+
+@keyframes typing{
+    from {width: 0;}
+}
+
+@keyframes blink{
+    50% {border-color: transparent;}
+}
+.bienvenido{
+    display:block;
+    font-family:'Courier New', Courier, monospace;
+    white-space: nowrap;
+    border-right: 0px solid;
+    width: 70ch;
+    margin-left: 470px;
+    animation: typing 2s steps(68), blink 0s infinite step-end alternate;
+        overflow: hidden; 
+}
+
+.container_1{
+    margin-left: 80px; 
+}
+.acerca_de{
+    display: flex;
+    margin-top: 100px;
+    font-size: 15px; 
+    text-decoration: none;
+    color: var(--black);
+    pointer-events: none;
+}
+.p_conta1{
+    font-size: 20px;
+    font-weight: bold;
+}
+.clase_h1_conta1{
+    float: right;
+    margin-right: 80px;
+}
+.lista_conta1{
+    clear: both;
+    float: right;
+}
+.a_conta1{
+    display: inline-block;
+}
+.lista_conta1 a:nth-child(1){
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+}
+.img1_conta1{
+    width: 200px;
+    height: 200px;
+    margin-right: 55px;
+}
+.img2_conta1{
+    width: 200px;
+    height: 200px;
+}
+.img3_conta1{
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+}
+.container_2{
+    clear: both;
+    float: right;
+    margin-right: 80px;
+}
+
+.proyectos{
+    display: block;
+    margin-top: 150px;
+    font-size: 15px; 
+    text-decoration: none;
+    color: var(--black);
+    pointer-events: none;
+    float: right;
+}
+.p_conta2{
+    font-size: 20px;
+    font-weight: bold;
+    clear: both;
+}
+
+.clearfix2{
+    clear:both
+}
+
+.a_conta2{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 300px;
+    margin-left: 130px;
+    margin-top: 50px;
+    text-decoration: none;
+    color: var(--black);
+    border: 1px solid var(--black);
+    background-color: var(--white);
+    border-radius: 8px;
+}
+
+.h3_conta2{
+  border-bottom: 1px solid var(--black);
+}
+
+.img1_conta2{
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: 200px;
+  border: 1px solid rgb(146, 160, 160);
+  border-radius: 8px;
+}
+
+.img2_conta2{
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 200px;
+    border: 1px solid rgb(146, 160, 160);
+    border-radius: 8px;
+}
+
+.lista_conta2 a:hover{
+    color: gold;
+    border: 1px solid gold;
+}
+
+.slin2{
+    border-bottom: 1px solid var(--black);
+    margin-top: 100px;
+    margin-right: 250px;
+    margin-left: 80px;
+}
+.slin3{
+    border-bottom: 1px solid var(--black);
+    margin-top: 100px;
+    margin-right: 0 !important;
+}
