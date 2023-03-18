@@ -19,7 +19,7 @@ body{
 nav{
     display: flex;
     justify-content: space-between;
-    padding: 0 24px;
+    padding: 0 0px 0 15px;
     border-bottom: 3px solid var(--black);
     background-color: var(--white);
 }
@@ -52,6 +52,9 @@ nav{
 .navbar-right ul a{
     padding-right: 15px;
 }
+.navbar-right{
+    margin-right: 0px;
+}
 .navbar-left ul li a, .navbar-right ul li a{
     text-decoration: none;
     color: rgb(146, 160, 160);
@@ -83,24 +86,21 @@ nav{
     width: 40px;
     height: 40px;
 }
-.bienvenida_pag{
-    background-color: rgb(146, 160, 160);
-}
+
 .Saludo{
-    display:block;
+    display: block;
     font-family:'Courier New', Courier, monospace;
     white-space: nowrap;
-    border-right: 0px solid;
     width: 70ch;
     margin-left: 350px;
     animation: typing 2s steps(68), blink 0s infinite step-end alternate;
     overflow: hidden; 
 }
 
-.avatar_img{
+.avatar_saludo{
     display: block;
-    text-align: center;
-   }
+    text-align: center
+}
 
 @keyframes typing{
     from {width: 0;}
@@ -117,7 +117,7 @@ nav{
     width: 70ch;
     margin-left: 470px;
     animation: typing 2s steps(68), blink 0s infinite step-end alternate;
-        overflow: hidden; 
+    overflow: hidden; 
 }
 
 .container_1{
@@ -205,7 +205,7 @@ nav{
 }
 
 .h3_conta2{
-  border-bottom: 1px solid var(--black);
+  /* border-bottom: 1px solid var(--black); */
 }
 
 .img1_conta2{
