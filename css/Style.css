@@ -1,3 +1,5 @@
+/* Cosas de la base */
+
 :root {
     --white: #FFFFFF;
     --black: #000000;
@@ -14,13 +16,16 @@
 body{
     margin: 0;
     font-family: 'Quicksand', sans-serif;
-    background-color: rgb(146, 160, 160);
+    background-color:;
 }
+
+/* Navbar */
+
 nav{
     display: flex;
     justify-content: space-between;
     padding: 0 0px 0 15px;
-    border-bottom: 3px solid var(--black);
+    border-bottom: 1px solid var(--black);
     background-color: var(--white);
 }
 .menu{
@@ -87,158 +92,57 @@ nav{
     height: 40px;
 }
 
-.Saludo{
-    display: block;
-    font-family:'Courier New', Courier, monospace;
-    white-space: nowrap;
-    width: 70ch;
-    margin-left: 350px;
-    animation: typing 2s steps(68), blink 0s infinite step-end alternate;
-    overflow: hidden; 
+/* Inicio */
+
+.Inicio{
+  margin-top: 10%;
+  margin-left: 3%;
 }
 
-.avatar_saludo{
-    display: block;
-    text-align: center
+.h1_inicio{
+    font-size: 150%;
 }
 
-@keyframes typing{
-    from {width: 0;}
+.imagen_saludo{
+    position: absolute;
+    right: 15%;
+    top: 20%;
 }
 
-@keyframes blink{
-    50% {border-color: transparent;}
-}
-.bienvenido{
-    display:block;
-    font-family:'Courier New', Courier, monospace;
-    white-space: nowrap;
-    border-right: 0px solid;
-    width: 70ch;
-    margin-left: 470px;
-    animation: typing 2s steps(68), blink 0s infinite step-end alternate;
-    overflow: hidden; 
-}
-
-.container_1{
-    margin-left: 80px; 
-}
-.acerca_de{
-    display: flex;
-    margin-top: 100px;
-    font-size: 15px; 
-    text-decoration: none;
-    color: var(--black);
-    pointer-events: none;
-}
-.p_conta1{
-    font-size: 20px;
+.p_inicio{
     font-weight: bold;
 }
-.clase_h1_conta1{
-    float: right;
-    margin-right: 80px;
+
+.saludo_mano{
+    width: 50px;
+    height: 30px;
 }
-.lista_conta1{
-    clear: both;
-    float: right;
-}
-.a_conta1{
-    display: inline-block;
-}
-.lista_conta1 a:nth-child(1){
+
+.lear_more a{
     text-decoration: none;
-    color: var(--black);
-    font-weight: bold;
-}
-.img1_conta1{
-    width: 200px;
-    height: 200px;
-    margin-right: 55px;
-}
-.img2_conta1{
-    width: 200px;
-    height: 200px;
-}
-.img3_conta1{
-    width: 200px;
-    height: 200px;
-    margin-left: 50px;
-}
-.container_2{
-    clear: both;
-    float: right;
-    margin-right: 80px;
+    color: var(--very-light-pink);
 }
 
-.proyectos{
-    display: block;
-    margin-top: 150px;
-    font-size: 15px; 
-    text-decoration: none;
-    color: var(--black);
-    pointer-events: none;
-    float: right;
-}
-.p_conta2{
-    font-size: 20px;
-    font-weight: bold;
-    clear: both;
-}
 
-.clearfix2{
-    clear:both
-}
+/* @Media */
 
-.a_conta2{
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    width: 300px;
-    margin-left: 130px;
-    margin-top: 50px;
-    text-decoration: none;
-    color: var(--black);
-    border: 1px solid var(--black);
-    background-color: var(--white);
-    border-radius: 8px;
-}
-
-.h3_conta2{
-  /* border-bottom: 1px solid var(--black); */
-}
-
-.img1_conta2{
-  display: block;
-  margin: 0 auto;
-  width: 250px;
-  height: 200px;
-  border: 1px solid rgb(146, 160, 160);
-  border-radius: 8px;
-}
-
-.img2_conta2{
-    display: block;
-    margin: 0 auto;
-    width: 250px;
-    height: 200px;
-    border: 1px solid rgb(146, 160, 160);
-    border-radius: 8px;
-}
-
-.lista_conta2 a:hover{
-    color: gold;
-    border: 1px solid gold;
-}
-
-.slin2{
-    border-bottom: 1px solid var(--black);
-    margin-top: 100px;
-    margin-right: 250px;
-    margin-left: 80px;
-}
-.slin3{
-    border-bottom: 1px solid var(--black);
-    margin-top: 100px;
-    margin-right: 0 !important;
+@media(max-width: 640px){
+    .menu{
+        display: block;
+    }
+    .navbar-left ul{
+        display: none;
+    }
+    .navbar-email{
+        display: none;
+    }
+    .logo{
+        margin-top: 12px;
+        width: 35px;
+        height: 35px;
+    }
+    .logo_gh{
+        width: 30px;
+        height: 30px;
+    }
 }
