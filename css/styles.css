@@ -19,6 +19,10 @@ body{
     background-color:;
 }
 
+.inactivo{
+    display: none;
+}
+
 /* Navbar */
 
 nav{
@@ -28,7 +32,8 @@ nav{
     border-bottom: 1px solid var(--black);
     background-color: var(--white);
 }
-.menu{
+
+.menu_burger{
     display: none;
 }
 .logo{
@@ -104,9 +109,11 @@ nav{
 }
 
 .imagen_saludo{
-    position: absolute;
-    right: 15%;
-    top: 20%;
+  display: flex;
+  width: 250px;
+  height: 250px;
+  margin-left: 70%;
+  margin-top: -23%;
 }
 
 .p_inicio{
@@ -123,12 +130,50 @@ nav{
     color: var(--very-light-pink);
 }
 
+/* Mobile */
+
+.mobile-menu {
+    background-color: var(--white);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 24px;
+  }
+  .mobile-menu a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    /* margin-bottom: 24px; */
+  }
+  .mobile-menu ul {
+    padding: 0;
+    margin: 24px 0 0;
+    list-style: none;
+  }
+  .mobile-menu ul:nth-child(1) {
+    border-bottom: 1px solid var(--very-light-pink);
+  }
+  .mobile-menu ul li {
+    margin-bottom: 24px;
+  }
+
 
 /* @Media */
 
-@media(max-width: 640px){
-    .menu{
-        display: block;
+@media(max-width: 739px){
+    /* Navbar */
+    .menu_burger{
+    display: block;
+    position: absolute;
+    top: 2.2%;
+    left: 2%;
+    width: 30px;
+    height: 30px;
+    }
+    .logo{
+        position: absolute;
+        right: 50%;
     }
     .navbar-left ul{
         display: none;
@@ -140,9 +185,21 @@ nav{
         margin-top: 12px;
         width: 35px;
         height: 35px;
+
     }
     .logo_gh{
         width: 30px;
         height: 30px;
+    }
+    /* Inicio */
+    .imagen_saludo{
+        margin-left: 25%;
+        margin-top: -60%;
+    }
+}
+
+@media (min-width: 740px){
+    .mobile-menu{
+        display: none;
     }
 }
