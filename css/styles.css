@@ -99,7 +99,7 @@ nav{
 
 /* Inicio */
 
-.Inicio{
+.inicio{
   margin-top: 10%;
   margin-left: 3%;
 }
@@ -108,12 +108,23 @@ nav{
     font-size: 150%;
 }
 
+.imagen_saludo_mobile{
+    display: none;
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 50%;
+}
+
 .imagen_saludo{
-  display: flex;
-  width: 250px;
-  height: 250px;
-  margin-left: 70%;
-  margin-top: -23%;
+  position: absolute;
+  right: 15%;
+  margin-top: 10%;
+  width: 20%;
+  height: 40%;
+  /* width: 250px;
+  height: 250px; */
+  border-radius: 80%;
+  border: 1px solid var(--black);
 }
 
 .p_inicio{
@@ -125,10 +136,37 @@ nav{
     height: 30px;
 }
 
-.lear_more a{
-    text-decoration: none;
-    color: var(--very-light-pink);
+.h2_lenguajes{
+    display: block;
+    text-align: center;
+    margin-top: 7%;
+    font-size: 110%;
 }
+
+.lenguajes{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.html_img{
+    width: 3%;
+    height: 3%;
+    
+}
+
+.css_img{
+    width: 3%;
+    height: 3%;
+    margin-left: 15px;
+}
+
+.js_img{
+    width: 3%;
+    height: 3%;
+    margin-left: 15px;
+}
+
 
 /* Mobile */
 
@@ -161,7 +199,9 @@ nav{
 
 /* @Media */
 
-@media(max-width: 739px){
+/* 739px es la base */
+
+@media(max-width: 1360px){
     /* Navbar */
     .menu_burger{
     display: block;
@@ -172,8 +212,7 @@ nav{
     height: 30px;
     }
     .logo{
-        position: absolute;
-        right: 50%;
+        display: none;
     }
     .navbar-left ul{
         display: none;
@@ -192,11 +231,30 @@ nav{
         height: 30px;
     }
     /* Inicio */
+    .inicio{
+        display: block;
+        margin-left: 0%;
+        align-items: center;
+        text-align: center;
+    }
+    .imagen_saludo_mobile{
+        display: block;
+        width: 30%;
+    }
+    .h2_inicio{
+        font-size: 130%;
+    }
+    .h1_inicio{
+        font-size: 170%;
+    }
+    .p_inicio{
+        font-size: 140%;
+    }
     .imagen_saludo{
-        margin-left: 25%;
-        margin-top: -60%;
+        display: none;
     }
 }
+
 
 @media (min-width: 740px){
     .mobile-menu{
