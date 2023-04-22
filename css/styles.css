@@ -309,7 +309,7 @@ html{
     right: -15px;
     font-size: 14px;
 }
-/* Esras clases se agregaran dinamicamente mediante javascript */
+/* Estas clases se agregaran dinamicamente mediante javascript */
 .skills .skill .javascript{
     width: 0%;
     animation: 2s javascript forwards;
@@ -658,3 +658,5 @@ footer .arriba{
         width: 100%;
     }
 }
+
+
